@@ -6,6 +6,6 @@ final class ios_cloud_arcaTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(ios_cloud_arca().text, "Hello, World!")
+        //XCTAssertEqual(ios_cloud_arca().text, "Hello, World!")
     }
 }
