@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CAError: Error {
+public enum CAError: Error {
     case instanceCreationFailed
     case instanceNotConfigured
 }

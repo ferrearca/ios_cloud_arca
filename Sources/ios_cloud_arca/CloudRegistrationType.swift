@@ -6,7 +6,7 @@
 
 import Foundation
 
-enum CloudRegistrationType {
+public enum CloudRegistrationType {
     case firebase
     //case azure
 }

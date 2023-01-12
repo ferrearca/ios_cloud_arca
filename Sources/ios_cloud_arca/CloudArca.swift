@@ -14,7 +14,7 @@ protocol CloudArca {
 }
 
 @available(iOS 13.0.0, *)
-struct AppleCloudArca: CloudArca {
+public struct AppleCloudArca: CloudArca {
     typealias ArcaCloudFactory = CAAppleServiceFactory
     
     static let factory: CAAppleServiceFactory = .init()

@@ -10,12 +10,12 @@ import Foundation
 // TODO: This will need to be split into an abstraction at some point to support Azure and AWS.
 
 @available(iOS 13.0.0, *)
-protocol CAServiceContainer {
+public protocol CAServiceContainer {
     func signIn(userName: String, password: String) async throws
     func signUp(userName: String, password: String) async throws
 }
 
 @available(iOS 13.0.0, *)
-protocol CAAppleServiceContainer: CAServiceContainer {
+public protocol CAAppleServiceContainer: CAServiceContainer {
 
 }
