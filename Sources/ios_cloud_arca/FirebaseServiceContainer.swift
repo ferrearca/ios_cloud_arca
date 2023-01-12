@@ -24,7 +24,7 @@ class AppleFirebaseServiceContainer: CAAppleServiceContainer {
 
     func signIn(userName: String, password: String) async throws {
         guard let app else {
-            throw "Firebase not configured!"
+            throw CAError.instanceNotConfigured
         }
 
         // TODO: Generate hash token from username and password here and store it if it does not exist.
@@ -35,7 +35,7 @@ class AppleFirebaseServiceContainer: CAAppleServiceContainer {
 
     func signUp(userName: String, password: String) async throws {
         guard let app else {
-            throw "Firebase not configured!"
+            throw CAError.instanceNotConfigured
         }
 
         // Call the firebase create user function

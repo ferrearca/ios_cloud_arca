@@ -23,7 +23,7 @@ class CAAppleServiceFactory: CAServiceFactory {
 
     func firebaseInstance() async throws -> AppleFirebaseServiceContainer {
         guard let instance = await serviceContainer(for: .firebase) as? AppleFirebaseServiceContainer else {
-            throw "Firebase Instance cannot be created"
+            throw CAError.instanceCreationFailed
         }
 
         return instance
