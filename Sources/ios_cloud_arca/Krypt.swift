@@ -11,12 +11,11 @@ import CryptoKit
 // Internal Cryptography Systems for E2E encryption, providing protection post quantum computing.
 
 // Encryptption entry points
-@available(macOS 10.15, *)
-@available(iOS 13.0, *)
 struct Krypt {
     // One way hash function
     // https://en.wikipedia.org/wiki/SWIFFT
-
+    @available(macOS 10.15, *)
+    @available(iOS 13.0, *)
     static func hash(input: String, salt: String) -> String {
         return ""
     }
@@ -24,7 +23,8 @@ struct Krypt {
 
     // Key Exchange (Generate Public&Private key pair)
     // https://en.wikipedia.org/wiki/Kyber
-
+    @available(macOS 10.15, *)
+    @available(iOS 13.0, *)
     static func keyExchange() {
         let signingKey = P521.Signing.PrivateKey() //Curve25519.Signing.PrivateKey()
         /*:
